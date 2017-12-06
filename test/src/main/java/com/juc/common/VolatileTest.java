@@ -1,4 +1,10 @@
 package com.juc.common;
+
+import java.util.Map;
+import java.util.Set;
+import java.util.TreeMap;
+import java.util.TreeSet;
+
 /**
  * volatile：用于修改变量，被修饰的变量取值的时候能获取到最新的值；
  * 				volatile a=b
@@ -22,8 +28,18 @@ public class VolatileTest {
 	private volatile int a;
 	private volatile Integer b;
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		Map<String,String> map = new TreeMap();
+		map.put("a", "A");
+		map.put("b", "A");
+		map.put("c", "A");
+		map.put("d", "A");
+		
+		
+		Set<String> set = new TreeSet();
+		set.add("a");
+		set.add("b");
+		set.add("c");
+		set.add("d");
 	}
 
 }
